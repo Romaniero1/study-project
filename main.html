@@ -1,264 +1,358 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
- 
-	<header class="header">
-		<div class="logo">
-			<svg></svg>
-			Пространство танца
-		</div>
-		<nav class="nav">
-			 <a href="/about">О нас</a>
-			 <a href="/new">Новости</a>
-			 <a href="/raiting">Рейтинг</a>
-			 <a href="/calendar">Календарь</a>
-			 <a href="/contacts">Контакты</a>
-		</nav>
-		<div class="socilas">
-			<a href="/calendar">
-				<svg></svg>
-			</a>
-			 <a href="/contacts">
-				<svg></svg>
-			 </a>
-		</div>
-	</header>	
-	<main>
-		<section class="intro">
-			<h1 class="header">Мы пространство танца </h1>
-			<p class="description">
-				- проект, который создан для комфортного 
-	общения и признания городской танцевальной
-	 культуры.
-			</p>
-			<a href="/reqeust">Подать заявку</a>
-		</section>
-		<section class="raitings">
-			<div class="raitings-members">
-				<h2>Рейтинг участников</h2>
-				<div class="carusel">
-					<button class="carusel-prev">
-						<svg></svg>
-					</button>
-					<ul class="carusel-content">
-						<li class="carusel-card">
-							<div class="cart-main">
-								<img src="" alt="Lester Figuero">
-								Lester Figuero
+
+<header class="header">
+	<div class="logo">
+		<img src="src/logo.png" alt="Логотип школы">
+	</div>
+	<nav class="nav">
+		<a class="nav__link" href="/about">О нас</a>
+		<a class="nav__link" href="/new">Новости</a>
+		<a class="nav__link" href="/raiting">Рейтинг</a>
+		<a class="nav__link" href="/calendar">Календарь</a>
+		<a class="nav__link" href="/contacts">Контакты</a>
+	</nav>
+	<div class="socials">
+		<a class="socials__link" href="/insta" id="insta">
+			<img src="src/inst.png" alt="Логотип инстаграмма">
+		</a>
+		<a class="socials__link" href="/vk" id="vk">
+			<img src="src/vk.png" alt="Логотип вк">
+		</a>
+	</div>
+</header>
+<main>
+	<section class="intro">
+		<h1 class="intro__title">Мы пространство танца </h1>
+		<p class="intro__description">
+			- проект, который создан для комфортного <br>
+			общения и признания городской танцевальной
+			культуры.
+		</p>
+		<a class="intro__button button" href="/reqeust">Подать заявку</a>
+	</section>
+	<section class="raitings">
+		<div class="raitings-members">
+			<h2>Рейтинг участников</h2>
+			<div class="carusel">
+				<button class="carusel-prev">
+					<img src="src/prev-arrow.png" alt="Стрелка назад">
+				</button>
+				<ul class="carusel-content">
+					<li class="carusel-card">
+						<div class="cart-main">
+							<img src="src/boy.png" alt="Lester Figuero">
+							Lester Figuero
+						</div>
+						<div class="card-addionatl-info">
+							- Западный район <br>
+							- Школа №123
+							<div class="card-raiting">
+								Рейтинг
+								<span>
+									32
+								</span>
 							</div>
-							<div class="card-addionatl-info">
-								- Западный район
-								- Школа №123
-								<div class="card-raiting">
-									Рейтинг 
-									<span>
-										32
-									</span>	
-								</div>
-							</div>
-						</li>
-						<li class="carusel-card">
-							<div class="cart-main">
-								<img src="" alt="Lester Figuero">
-								Lester Figuero
-							</div>
-							<div class="card-addionatl-info">
-								- Западный район
-								- Школа №123
-								<div class="card-raiting">
-									Рейтинг 
-									<span>
-										32
-									</span>	
-								</div>
-							</div>
-						</li>
-						<li class="carusel-card">
-							<div class="cart-main">
-								<img src="" alt="Lester Figuero">
-								Lester Figuero
-							</div>
-							<div class="card-addionatl-info">
-								- Западный район
-								- Школа №123
-								<div class="card-raiting">
-									Рейтинг 
-									<span>
-										32
-									</span>	
-								</div>
-							</div>
-						</li>
-						<li class="carusel-card">
-							<div class="cart-main">
-								<img src="" alt="Lester Figuero">
-								Lester Figuero
-							</div>
-							<div class="card-addionatl-info">
-								- Западный район
-								- Школа №123
-								<div class="card-raiting">
-									Рейтинг 
-									<span>
-										32
-									</span>	
-								</div>
-							</div>
-						</li>
-						<li class="carusel-card">
-							<div class="cart-main">
-								<img src="" alt="Lester Figuero">
-								Lester Figuero
-							</div>
-							<div class="card-addionatl-info">
-								- Западный район
-								- Школа №123
-								<div class="card-raiting">
-									Рейтинг 
-									<span>
-										32
-									</span>	
-								</div>
-							</div>
-						</li>
-						<li class="carusel-card">
-							<div class="cart-main">
-								<img src="" alt="Lester Figuero">
-								Lester Figuero
-							</div>
-							<div class="card-addionatl-info">
-								- Западный район
-								- Школа №123
-								<div class="card-raiting">
-									Рейтинг 
-									<span>
-										32
-									</span>	
-								</div>
-							</div>
-						</li>
-					</ul>
-					<button class="carusel-next">
-						<svg></svg>
-					</button>
-				</div>
-			</div>	
-			<div class="raitings-divisions">
-				<h2>Рейтинг дивизионов</h2>
-				<ul class="diagram">
-					<li>
-						Север
-						<div class="diagram-progress"></div>
-						300
+						</div>
 					</li>
-					<li>
-						Север
-						<div class="diagram-progress"></div>
-						300
+					<li class="carusel-card">
+						<div class="cart-main">
+							<img src="src/girl.png" alt="Lester Figuero">
+							Lester Figuero
+						</div>
+						<div class="card-addionatl-info">
+							- Западный район <br>
+							- Школа №123
+							<div class="card-raiting">
+								Рейтинг
+								<span>
+									32
+								</span>
+							</div>
+						</div>
 					</li>
-					<li>
-						Север
-						<div class="diagram-progress"></div>
-						300
+					<li class="carusel-card">
+						<div class="cart-main">
+							<img src="src/girl.png" alt="Lester Figuero">
+							Lester Figuero
+						</div>
+						<div class="card-addionatl-info">
+							- Западный район <br>
+							- Школа №123
+							<div class="card-raiting">
+								Рейтинг
+								<span>
+									32
+								</span>
+							</div>
+						</div>
 					</li>
-					<li>
-						Север
-						<div class="diagram-progress"></div>
-						300
+					<li class="carusel-card">
+						<div class="cart-main">
+							<img src="src/girl.png" alt="Lester Figuero">
+							Lester Figuero
+						</div>
+						<div class="card-addionatl-info">
+							- Западный район <br>
+							- Школа №123
+							<div class="card-raiting">
+								Рейтинг
+								<span>
+									32
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="carusel-card">
+						<div class="cart-main">
+							<img src="src/boy.png" alt="Lester Figuero">
+							Lester Figuero
+						</div>
+						<div class="card-addionatl-info">
+							- Западный район <br>
+							- Школа №123
+							<div class="card-raiting">
+								Рейтинг
+								<span>
+									32
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="carusel-card">
+						<div class="cart-main">
+							<img src="src/boy.png" alt="Lester Figuero">
+							Lester Figuero
+						</div>
+						<div class="card-addionatl-info">
+							- Западный район <br>
+							- Школа №123
+							<div class="card-raiting">
+								Рейтинг
+								<span>
+									32
+								</span>
+							</div>
+						</div>
 					</li>
 				</ul>
-				<a href="/members">Все участники</a>
+				<button class="carusel-next">
+					<img src="src/next-arrow.png" alt="Стрелка вперед">
+				</button>
 			</div>
-		</section>
-		<section class="calendar">
-			<h2>
-				КАЛЕНДАРЬ СОБЫТИЙ  ДЕКАБРЬ 2020
-			</h2>
-			<ul class="months">
-				<li class="month">
-					<h3>Февраль</h3>
-					<ul class="events">
-						<li class="event">
-							<div>11 Февраля</div>
-							Star waw клуб Арена
-						</li>
-						<li class="event">
-							<div>11 Февраля</div>
-							Star waw клуб Арена
-						</li>
-					</ul>
-				</li>
-				<li class="month">
-					<h3>Май</h3>
-					<ul class="events">
-						<li class="event">
-							<div>11 Май</div>
-							Star waw клуб Арена
-						</li>
-						<li class="event">
-							<div>11 Май</div>
-							Star waw клуб Арена
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<a href="/calenda">
-				Все события
-				<svg></svg>
-			</a>
-		</section>
-		<section class="news">
-			<h2>Новости</h2>
-			<ul>
-				<li>
-					<div>
-						<h3>Новость 1</h3>
-						<div class="news-date">24 января 2019</div>
-						<p class="news-description">
-							Пространство танца - проект, который создан для комфортного общения и признания городской
-						</p>
-					</div>
-					<img src="" alt="Новость 1">
-				</li>
-				<li>
-					<div>
-						<h3>Новость 1</h3>
-						<div class="news-date">24 января 2019</div>
-						<p class="news-description">
-							Пространство танца - проект, который создан для комфортного общения и признания городской
-						</p>
-					</div>
-					<img src="" alt="Новость 1">
-				</li>
-			</ul>
-			<a href="/news">Все новости</a>
-		</section>
-		<section class="about">
-			<div class="about-block">
-				<h3>Чем мы занимаемся?</h3>
-				<p>Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной культуры.       Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной культуры.Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной культуры.Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной культуры.</p>
-			</div>
-			<div class="about-block">
-				<h3>Немного о нас</h3>
-				<p>Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной культуры.       Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной культуры.Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной культуры.Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной культуры.</p>
-			</div>
-		</section>
-	</main>	
-	<footer class="footer">
-		<p>Все права зашишены (с)</p>
-		Мы в соце сетях 
-		<div class="socilas">
-			<a href="/calendar">
-				<svg></svg>
-			</a>
-			 <a href="/contacts">
-				<svg></svg>
-			 </a>
 		</div>
-	</footer>
+		<div class="raitings-divisions">
+			<h2>Рейтинг дивизионов</h2>
+			<ul class="diagram">
+				<li class="diagram-area">
+					Север
+					<div class="diagram-progress"></div>
+					300
+				</li>
+				<li class="diagram-area">
+					Север
+					<div class="diagram-progress"></div>
+					300
+				</li>
+				<li class="diagram-area">
+					Север
+					<div class="diagram-progress"></div>
+					300
+				</li>
+				<li class="diagram-area">
+					Север
+					<div class="diagram-progress"></div>
+					300
+				</li>
+			</ul>
+			<a class="members__button button" href="/members">Все участники</a>
+		</div>
+	</section>
+	<section class="calendar">
+		<h2>
+			КАЛЕНДАРЬ СОБЫТИЙ ДЕКАБРЬ 2020
+		</h2>
+		<ul class="months">
+			<li class="month">
+				<h3>Февраль</h3>
+				<ul class="events">
+					<li class="event">
+						<div>11 Февраля</div>
+						Star waw клуб Арена
+					</li>
+					<li class="event">
+						<div>11 Февраля</div>
+						Star waw клуб Арена
+					</li>
+				</ul>
+			</li>
+			<li class="month">
+				<h3>Май</h3>
+				<ul class="events">
+					<li class="event">
+						<div>11 Май</div>
+						Star waw клуб Арена
+					</li>
+					<li class="event">
+						<div>11 Май</div>
+						Star waw клуб Арена
+					</li>
+				</ul>
+			</li>
+			<li class="month">
+				<h3>Май</h3>
+				<ul class="events">
+					<li class="event">
+						<div>11 Май</div>
+						Star waw клуб Арена
+					</li>
+					<li class="event">
+						<div>11 Май</div>
+						Star waw клуб Арена
+					</li>
+				</ul>
+			</li>
+			<li class="month">
+				<h3>Май</h3>
+				<ul class="events">
+					<li class="event">
+						<div>11 Май</div>
+						Star waw клуб Арена
+					</li>
+					<li class="event">
+						<div>11 Май</div>
+						Star waw клуб Арена
+					</li>
+				</ul>
+			</li>
+			<li class="month">
+				<h3>Май</h3>
+				<ul class="events">
+					<li class="event">
+						<div>11 Май</div>
+						Star waw клуб Арена
+					</li>
+					<li class="event">
+						<div>11 Май</div>
+						Star waw клуб Арена
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<a class="all-events" href="/calendar">
+			Все события
+			<img src="src/right-arrow.png" alt="Все события">
+		</a>
+	</section>
+	<section class="news">
+		<h2>Новости</h2>
+		<ul class="news-block">
+			<li class="news-card">
+				<img src="src/news-cover1.png" alt="Картинка новости">
+				<div class="news-info">
+					<h3>Новость 1</h3>
+					<div class="news-date">24 января 2019</div>
+					<p class="news-description">
+						Пространство танца - проект, который создан для комфортного общения и признания городской
+					</p>
+				</div>
+			</li>
+			<li class="news-card">
+				<img src="src/news-cover2.png" alt="Картинка новости">
+				<div class="news-info">
+					<h3>Новость 1</h3>
+					<div class="news-date">24 января 2019</div>
+					<p class="news-description">
+						Пространство танца - проект, который создан для комфортного общения и признания городской
+					</p>
+				</div>
+			</li>
+			<li class="news-card">
+				<img src="src/news-cover2.png" alt="Картинка новости">
+				<div class="news-info">
+					<h3>Новость 1</h3>
+					<div class="news-date">24 января 2019</div>
+					<p class="news-description">
+						Пространство танца - проект, который создан для комфортного общения и признания городской
+					</p>
+				</div>
+			</li>
+			<li class="news-card">
+				<img src="src/news-cover2.png" alt="Картинка новости">
+				<div class="news-info">
+					<h3>Новость 1</h3>
+					<div class="news-date">24 января 2019</div>
+					<p class="news-description">
+						Пространство танца - проект, который создан для комфортного общения и признания городской
+					</p>
+				</div>
+			</li>
+			<li class="news-card">
+				<img src="src/news-cover2.png" alt="Картинка новости">
+				<div class="news-info">
+					<h3>Новость 1</h3>
+					<div class="news-date">24 января 2019</div>
+					<p class="news-description">
+						Пространство танца - проект, который создан для комфортного общения и признания городской
+					</p>
+				</div>
+			</li>
+			<li class="news-card">
+				<img src="src/news-cover2.png" alt="Картинка новости">
+				<div class="news-info">
+					<h3>Новость 1</h3>
+					<div class="news-date">24 января 2019</div>
+					<p class="news-description">
+						Пространство танца - проект, который создан для комфортного общения и признания городской
+					</p>
+				</div>
+			</li>
+		</ul>
+		<a href="/news">
+			Все новости
+			<img src="src/right-arrow-black.png" alt="Все новости">
+		</a>
+	</section>
+	<section class="about">
+		<div class="about-block">
+			<h3>Чем мы занимаемся?</h3>
+			<hr>
+			<p>Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной
+				культуры. Пространство танца - проект, который создан для комфортного общения и признания городской
+				танцевальной культуры.Пространство танца - проект, который создан для комфортного общения и признания
+				городской танцевальной культуры.Пространство танца - проект, который создан для комфортного общения и
+				признания городской танцевальной культуры.</p>
+		</div>
+		<div class="about-block">
+			<h3>Немного о нас</h3>
+			<hr>
+			<p>Пространство танца - проект, который создан для комфортного общения и признания городской танцевальной
+				культуры. Пространство танца - проект, который создан для комфортного общения и признания городской
+				танцевальной культуры.Пространство танца - проект, который создан для комфортного общения и признания
+				городской танцевальной культуры.Пространство танца - проект, который создан для комфортного общения и
+				признания городской танцевальной культуры.</p>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<p>Все права защищены <br>(с)</p>
+	Мы в социальных сетях
+	<div class="socilas">
+		<a href="/inst">
+			<img src="src/inst.png" alt="">
+		</a>
+		<a href="/vk.com">
+			<img src="src/vk.png" alt="">
+		</a>
+	</div>
+</footer>
 </body>
+
 </html>

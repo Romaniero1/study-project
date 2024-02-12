@@ -1,0 +1,372 @@
+body,
+p,
+h2,
+h3,
+ul,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    z-index: 10000;
+}
+
+.header_color_day {
+    background-color: #fff;
+}
+
+.logo {
+    margin-right: auto;
+    background-image: url(./logo.png);
+}
+
+.header svg {
+    width: 20px;
+    height: 20px;
+}
+
+.nav {
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    font-size: 13px;
+    line-height: 13px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 518px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: url(src/cover-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.intro__title {
+    margin: 0;
+    margin-top: 152px;
+    font-size: 48px;
+    line-height: 57px;
+}
+
+.intro__description {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 540px;
+}
+
+.intro__button {
+    margin-left: 188px;
+    margin-top: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #1A8CE3;
+    color: #fff;
+}
+
+.socials__link {
+    margin-right: 20px;
+}
+
+.socials__link:last-child {
+    margin-right: 20px;
+}
+
+.raitings {
+    margin: 0 70px;
+    padding-top: 27px;
+    display: flex;
+    height: 380px;
+}
+
+.carusel {
+    display: flex;
+    padding-top: 25px;
+}
+
+.carusel-content {
+    display: flex;
+    padding: 0;
+}
+
+.carusel-card {
+    padding-right: 38px;
+}
+
+.carusel-card:last-child {
+    padding-right: 0;
+}
+
+button.carusel-prev,
+button.carusel-next {
+    padding-top: 70px;
+    height: 34px;
+    width: 34px;
+    background: transparent;
+    border: 0;
+}
+
+li::marker {
+    color: transparent;
+}
+
+.cart-main {
+    height: 118px;
+    width: 118px;
+}
+
+.cart-main img {
+    padding-bottom: 24px;
+}
+
+.card-addionatl-info {
+    display: none;
+    padding-top: 140px;
+}
+
+/* Удалить после TS */
+.carusel-card:hover .card-addionatl-info {
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    height: 86px;
+    width: 141px;
+    border-radius: 6px;
+    margin-top: -85px;
+    margin-left: -17px;
+    z-index: -10;
+    padding-left: 10px;
+}
+
+.carusel-card:hover .cart-main {
+    color: #1A8CE3;
+}
+
+.card-raiting {
+    padding-top: 15px;
+    padding-left: 67px;
+    color: #1A8CE3;
+}
+
+.card-raiting span {
+    position: absolute;
+    right: -8px;
+}
+
+.diagram {
+    padding-top: 25px;
+}
+
+.diagram-area {
+    display: flex;
+}
+
+.members__button {
+    margin-top: 57px;
+    margin-left: 121px;
+}
+
+.calendar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 727px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: url(src/cover-calendar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.calendar h2 {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    width: 357px;
+}
+
+.calendar .all-events {
+    position: absolute;
+    bottom: 44px;
+    right: 70px;
+    color: #fff;
+}
+
+.months {
+    display: grid;
+    grid-template-columns: 195px 195px 195px;
+    padding-top: 49px;
+}
+
+.month {
+    padding-right: 30px;
+    height: 219px;
+}
+
+.month h3 {
+    display: flex;
+    height: 35px;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.events {
+    padding-top: 15px;
+    padding-bottom: 46px;
+}
+
+.event {
+    padding-top: 19px;
+}
+
+.event div {
+    color: black;
+}
+
+.news {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 736px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+}
+
+.news-block {
+    display: grid;
+    grid-template-columns: 518px 518px;
+    padding-top: 30px;
+    row-gap: 30px;
+    column-gap: 66px;
+}
+
+.news-card {
+    display: flex;
+}
+
+.news-info {
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    padding-left: 42px;
+}
+
+.news-info h3 {
+    padding-bottom: 7px;
+}
+
+.news-info .news-date {
+    padding-bottom: 10px;
+    color: #1A8CE3;
+}
+
+.news a {
+    position: absolute;
+    bottom: 44px;
+    right: 70px;
+    text-decoration: none;
+    color: black;
+}
+
+.news a img {
+    padding-left: 10px;
+}
+
+.about {
+    display: flex;
+    padding-left: 70px;
+    padding-top: 74px;
+    background-color: #02171E;
+    height: 495px;
+    color: #fff;
+}
+
+.about-block {
+    width: 454px;
+}
+
+.about-block:last-child {
+    padding-left: 100px;
+}
+
+.about-block h3 {
+    width: 188px;
+    padding-bottom: 30px;
+}
+
+
+.footer {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 55px;
+    z-index: 10000;
+}
+
+.footer p {
+    margin-right: auto;
+}
+
+.socilas img {
+    margin-left: 20px;
+    width: 31px;
+    height: 31px;
+}
+
+hr {
+    height: 4px;
+    width: 36px;
+    border: 0;
+    background-color: blue;
+    margin-bottom: 30px;
+}
