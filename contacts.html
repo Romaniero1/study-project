@@ -5,66 +5,71 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
-<header class="header">
-	<div class="logo">
-		<svg></svg>
-		Пространство танца
+<header class="header header-color_day">
+	<div class="header-logo">
+		<img src="src/logo.png" alt="Логотип школы">
 	</div>
-	<nav class="nav">
-		<a href="/about">О нас</a>
-		<a href="/new">Новости</a>
-		<a href="/raiting">Рейтинг</a>
-		<a href="/calendar">Календарь</a>
-		<a href="/contacts">Контакты</a>
+	<nav class="header-nav">
+		<a class="header-nav__link" href="/about">О нас</a>
+		<a class="header-nav__link" href="/new">Новости</a>
+		<a class="header-nav__link" href="/raiting">Рейтинг</a>
+		<a class="header-nav__link" href="/calendar">Календарь</a>
+		<a class="header-nav__link" href="/contacts">Контакты</a>
 	</nav>
-	<div class="socilas">
-		<a href="/calendar">
-			<svg></svg>
+	<div class="header-socials">
+		<a class="header-socials__link" href="/insta" id="insta">
+			<img src="src/inst.png" alt="Логотип инстаграмма">
 		</a>
-		<a href="/contacts">
-			<svg></svg>
+		<a class="header-socials__link" href="/vk" id="vk">
+			<img src="src/vk.png" alt="Логотип вк">
 		</a>
 	</div>
 </header>
 <main>
-	<section class="contacts">
-		<div class="card-contacts">
-			<h1 class="header">Наши контакты </h1>
-			<p class="description">
+	<section class="contacts-intro">
+		<div class="contacts-card">
+			<h1 class="contacts-card__title">Наши контакты </h1>
+			<p class="contacts-card__description">
 				Адрес: ул. Пушкина д. 24а </br>
 				Телефон: 8 (222) 333-33-33 </br>
 				E-mail : Prostranstvotancha@mail.ru </br>
 			</p>
 		</div>
+		<hr />
 	</section>
-	<section class="raitings">
-		<p class="bread-crumbs">Главная/Контакты</p>
-		<div class="form-contact">
-			<h2>Присоединяйся к нам</h2>
-			<input type="text" placeholder="Фамилия">
-			<input type="text" placeholder="Имя">
-			<input type="text" placeholder="+7 (***) *** ****">
-			<input type="text" placeholder="email">
-			<input type="text" placeholder="Комментарий">
-			<input type="checkbox" name="" id="">
-			<p>Согласие на обработку персональных данных</p>
-			<button class="form-submit">
-		</div>
-		<div class="map">
-			<img src="" alt="Карта">
+	<section class="contacts-container">
+		<p class="contacts-bread__crumbs">Главная / <span class="contacts-bread__crumbs_color">Контакты</span></p>
+		<div class="contacts-block">
+			<div class="contacts-form">
+				<h2>Присоединяйся к нам</h2>
+				<input type="text" placeholder="Фамилия">
+				<input type="text" placeholder="Имя">
+				<input type="text" placeholder="+7 (***) *** ****">
+				<input type="text" placeholder="email">
+				<input style="padding: 0 0 120px 18px" type="text" placeholder="Комментарий">
+				<div class="contacts-form-checkbox">
+					<input type="checkbox" name="" id="">
+					<p>Согласие на обработку персональных данных</p>
+				</div>
+				<button class="contacts-form-submit button"> Отправить заявку</button>
+			</div>
+			<div class="contacts-map">
+				<img src="src/contacts-map.png" alt="Карта">
+			</div>
 		</div>
 </main>
 <footer class="footer">
-	<p>Все права зашишены (с)</p>
-	Мы в соце сетях
-	<div class="socilas">
-		<a href="/calendar">
-			<svg></svg>
+	<p>Все права защищены <br>(с)</p>
+	Мы в социальных сетях
+	<div class="footer-socilas">
+		<a href="/inst">
+			<img src="src/inst.png" alt="">
 		</a>
-		<a href="/contacts">
-			<svg></svg>
+		<a href="/vk.com">
+			<img src="src/vk.png" alt="">
 		</a>
 	</div>
 </footer>
