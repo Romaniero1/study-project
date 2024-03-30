@@ -5,112 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <svg></svg>
-            Пространство танца
+        <div class="header-logo">
+            <img src="src/logo.png" alt="Логотип школы">
         </div>
-        <nav class="nav">
-            <a href="/about">О нас</a>
-            <a href="/new">Новости</a>
-            <a href="/raiting">Рейтинг</a>
-            <a href="/calendar">Календарь</a>
-            <a href="/contacts">Контакты</a>
+        <nav class="header-nav">
+            <a class="header-nav__link" href="/about">О нас</a>
+            <a class="header-nav__link" href="/new">Новости</a>
+            <a class="header-nav__link" href="/raiting">Рейтинг</a>
+            <a class="header-nav__link" href="/calendar">Календарь</a>
+            <a class="header-nav__link" href="/contacts">Контакты</a>
         </nav>
-        <div class="socilas">
-            <a href="/calendar">
-                <svg></svg>
+        <div class="header-socials">
+            <a class="header-socials__link" href="/insta" id="insta">
+                <img src="src/inst.png" alt="Логотип инстаграмма">
             </a>
-            <a href="/contacts">
-                <svg></svg>
+            <a class="header-socials__link" href="/vk" id="vk">
+                <img src="src/vk.png" alt="Логотип вк">
             </a>
         </div>
     </header>
-    <main>
-        <div class="divisions">
-            <div class="button-panel">
-                <button class="divisions-button">Дивизионы</button>
-                <button class="schools-button">Школы</button>
-                <button class="members-button">Участники</button>
-            </div>
-            <div class="raitings-divisions">
+    <main class="division">
+        <div class="divisions-block">
+            <ul class="divisions-panel">
+                <li>
+                    <button class="divisions-panel__category">
+                        <p>Дивизионы</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="divisions-panel__category" style="background-color: rgba(0, 0, 0, 0.5)">
+                        <p>Школы</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="divisions-panel__category" style="background-color: rgba(11, 219, 30, 0.5)">
+                        <p>Участники</p>
+                    </button>
+                </li>
+            </ul>
+            <div class="divisions-raitings">
                 <h2>Рейтинг</h2>
-                <ul class="diagram">
-                    <li>
-                        Север
-                        <button class="button-diagram-progress"></button>
-                        300
+                <ul class="divisions-raitings-diagram">
+                    <li class="divisions-raitings-diagram__block">
+                        <h2>Север</h2>
+                        <button class="divisions-raitings-progress" style="background-color: rgba(66, 66, 66)"></button>
+                        <h2 class="divisions-raitings-count">300</h2>
                     </li>
-                    <li>
-                        Юг
-                        <button class="button-diagram-progress"></button>
-                        290
+                    <li class="divisions-raitings-diagram__block">
+                        <h2>Юг</h2>
+                        <button class="divisions-raitings-progress" style="width: 500px; background-color: rgba(255, 39, 0)"></button>
+                        <h2 class="divisions-raitings-count">300</h2>
                     </li>
-                    <li>
-                        Запад
-                        <button class="button-diagram-progress"></button>
-                        310
+                    <li class="divisions-raitings-diagram__block">
+                        <h2>Запад</h2>
+                        <button class="divisions-raitings-progress" style="background-color: rgba(11, 219, 30)"></button>
+                        <h2 class="divisions-raitings-count">300</h2>
                     </li>
-                    <li>
-                        Восток
-                        <button class="button-diagram-progress"></button>
-                        280
+                    <li class="divisions-raitings-diagram__block">
+                        <h2>Восток</h2>
+                        <button class="divisions-raitings-progress" style="background-color: rgba(0, 104, 234)"></button>
+                        <h2 class="divisions-raitings-count">300</h2>
                     </li>
                 </ul>
             </div>
         </div>
+        <h2>Школы Дивизиона: Север</h2>
         <div class="division-schools">
-            <h2>Школы Дивизиона: Север</h2>
-            <button class="carusel-prev">
-                <svg></svg>
+            <button class="division-schools-carusel__prev">
+                <svg viewBox="0 0 9 14">
+                    <path
+                        d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+                </svg>
             </button>
-            <ul class="carusel">
-                <li class="carusel-card">
-                    <svg></svg>
+            <ul class="division-schools-carusel">
+                <li class="division-schools-carusel__card">
+                    <img src="src/divisions-schools-cover.png" alt="">
                     <p>ТимПарк</p>
                 </li>
-                <li class="carusel-card">
-                    <svg></svg>
+                <li class="division-schools-carusel__card">
+                    <img src="src/divisions-schools-cover.png" alt="">
                     <p>Дабугикрю</p>
                 </li>
-                <li class="carusel-card">
-                    <svg></svg>
+                <li class="division-schools-carusel__card">
+                    <img src="src/divisions-schools-cover.png" alt="">
                     <p>МСДонатело</p>
                 </li>
-                <li class="carusel-card">
-                    <svg></svg>
+                <li class="division-schools-carusel__card">
+                    <img src="src/divisions-schools-cover.png" alt="">
                     <p>Jane Valdez</p>
                 </li>
-                <li class="carusel-card">
-                    <svg></svg>
+                <li class="division-schools-carusel__card">
+                    <img src="src/divisions-schools-cover.png" alt="">
                     <p>Mario Ballard</p>
                 </li>
-                <li class="carusel-card">
-                    <svg></svg>
+                <li class="division-schools-carusel__card">
+                    <img src="src/divisions-schools-cover.png" alt="">
                     <p>Kakoi to perez</p>
                 </li>
-                <li class="carusel-card">
-                    <svg></svg>
+                <li class="division-schools-carusel__card">
+                    <img src="src/divisions-schools-cover.png" alt="">
                     <p>Escho odin</p>
                 </li>
             </ul>
-            <button class="carusel-next">
-                <svg></svg>
+            <button class="division-schools-carusel__next">
+                <svg viewBox="0 0 9 14">
+                    <path
+                        d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+                </svg>
             </button>
         </div>
     </main>
     <footer class="footer">
-        <p>Все права зашишены (с)</p>
-        Мы в соце сетях
-        <div class="socilas">
-            <a href="/calendar">
-                <svg></svg>
+        <p>Все права защищены <br>(с)</p>
+        Мы в социальных сетях
+        <div class="footer-socilas">
+            <a href="/inst">
+                <img src="src/inst.png" alt="">
             </a>
-            <a href="/contacts">
-                <svg></svg>
+            <a href="/vk.com">
+                <img src="src/vk.png" alt="">
             </a>
         </div>
     </footer>

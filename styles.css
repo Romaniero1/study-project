@@ -192,7 +192,7 @@ li {
     padding-left: 10px;
 }
 
-.main-carusel__card:hover .card__main {
+.main-carusel__card:hover .main-card {
     color: #1A8CE3;
 }
 
@@ -1315,13 +1315,16 @@ input[type=range]::-webkit-slider-thumb {
     row-gap: 30px;
 }
 
+.request-modal-form {
+    color: #F9F9F9;
+}
+
 .request-modal-close {
     position: absolute;
     top: 15px;
     right: 15px;
     background-color: transparent;
     border: 0;
-    
 }
 
 .request-modal-close svg {
@@ -1374,4 +1377,343 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: 30px;
     background-color: #F9F9F9;
     color: #02171E;
+}
+
+.division {
+    background-color: black;
+    color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 200px;
+    margin: auto;
+    padding-top: 245px;
+}
+
+.divisions-block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 72px;
+}
+
+.divisions-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.divisions-panel__category {
+    width: 68px;
+    height: 158px;
+    background-color: rgba(216, 216, 216, 0.5);
+    border: 0;
+    color: #fff;
+}
+
+.divisions-panel__category:focus {
+    border: solid 2px white;
+}
+
+.divisions-panel__category p {
+    transform: rotate(-90deg);
+}
+
+.divisions-raitings {
+    display: flex;
+    flex-direction: column;
+    margin-left: 27px;
+}
+
+.divisions-raitings-diagram {
+    margin-top: 55px;
+    width: 1242px;
+}
+
+.divisions-raitings-diagram__block {
+    padding-bottom: 53px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.divisions-raitings-diagram__block:last-child {
+    padding-bottom: 0;
+}
+
+.divisions-raitings-diagram__block h2 {
+    width: 142px;
+}
+
+.divisions-raitings-progress {
+    width: 700px;
+    height: 58px;
+    border: 0;
+}
+
+.divisions-raitings-progress:focus {
+    border: solid 2px white;
+}
+
+.divisions-raitings-count {
+    position: absolute;
+    right: 0;
+}
+
+.division-schools {
+    display: flex;
+    margin-top: 46px;
+}
+
+.division-schools-carusel {
+    display: flex;
+    column-gap: 58px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.division-schools-carusel__next,
+.division-schools-carusel__prev {
+    background-color: transparent;
+    border: 0;
+}
+
+.division-schools-carusel__prev {
+    transform: rotate(180deg)
+}
+
+.division-schools-carusel__next path,
+.division-schools-carusel__prev path {
+    fill: #ffffff;
+    cursor: pointer;
+}
+
+.division-schools-carusel__next svg,
+.division-schools-carusel__prev svg {
+    width: 10px;
+    height: 20px;
+}
+
+.division-schools-carusel__card img {
+    padding: 18px;
+}
+
+.division-schools-carusel__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.school {
+    background-color: black;
+    color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 200px;
+    margin: auto;
+    padding-top: 245px;
+}
+
+.school-block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 72px;
+}
+
+.school-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-panel__category {
+    width: 68px;
+    height: 158px;
+    background-color: rgba(216, 216, 216, 0.5);
+    border: 0;
+    color: #fff;
+}
+
+.school-panel__category:focus {
+    border: solid 2px white;
+}
+
+.school-panel__category p {
+    transform: rotate(-90deg);
+}
+
+.school-diagram {
+    margin-left: 29px;
+}
+
+.school-diagram-block {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.school-raiting-carusel__prev,
+.school-raiting-carusel__next,
+.school-raitings-diagram__prev,
+.school-raitings-diagram__next {
+    background-color: transparent;
+    border: 0;
+}
+
+.school-raiting-carusel__prev,
+.school-raitings-diagram__prev {
+    transform: rotate(180deg)
+}
+
+.school-raiting-carusel__prev path,
+.school-raiting-carusel__next path,
+.school-raitings-diagram__prev path,
+.school-raitings-diagram__next path {
+    fill: #ffffff;
+    cursor: pointer;
+}
+
+.school-raiting-carusel__prev svg,
+.school-raiting-carusel__next svg,
+.school-raitings-diagram__prev svg,
+.school-raitings-diagram__next svg {
+    width: 10px;
+    height: 20px;
+}
+
+.school-diagram-carusel {
+    display: flex;
+    position: relative;
+    column-gap: 155px;
+    height: 445px;
+    width: 1000px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.school-diagram__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.school-diagram__card h4 {
+    position: absolute;
+    bottom: 0;
+}
+
+.school-diagram-progress {
+    width: 70px;
+    margin-bottom: 30px;
+    border: 0;
+}
+
+.school-raiting-carusel {
+    margin-top: 31px;
+}
+
+.school-raiting-carusel__content {
+    display: flex;
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.school-raiting-carusel__card {
+    padding-right: 52px;
+}
+
+.school-raiting-carusel__card:last-child {
+    padding-right: 0;
+}
+
+.school-raiting-carusel_name {
+    height: 118px;
+    width: 118px;
+    z-index: 100;
+    position: relative;
+}
+
+.school-raiting-carusel_name img {
+    padding-bottom: 24px;
+    z-index: 100;
+}
+
+.school-raiting-carusel_info {
+    display: none;
+    padding-top: 140px;
+}
+
+.school-raiting-carusel__card:hover .school-raiting-carusel_info {
+    display: block;
+    position: absolute;
+    background-color: #1A8CE3;
+    color: #fff;
+    height: 86px;
+    width: 141px;
+    border-radius: 6px;
+    margin-top: -85px;
+    margin-left: -17px;
+    z-index: 10;
+    padding-left: 10px;
+}
+
+.school-raiting-carusel__card:hover .school-raiting-carusel_name {
+    color: black;
+    z-index: 1000;
+}
+
+.school-raiting-carusel {
+    display: flex;
+}
+
+.school-card-info {
+    width: 1240px;
+    height: 500px;
+    background-color: #121212;
+    margin-top: 235px;
+    display: flex;
+}
+
+.school-card-socilas {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70px;
+    background-color: #fff;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.school-card-info__block {
+    display: flex;
+    flex-direction: row;
+    margin-left: 31px;
+    margin-top: 53px;
+}
+
+.school-card-info__block p {
+    width: 613px;
+    height: 393px;
+    margin-left: 64px;
+}
+
+.school-card-info__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 323px;
+}
+
+.school-card-info__title img {
+    margin-top: 53px;
+}
+
+.school-card-socilas a:first-child {
+    padding-top: 60px;
 }

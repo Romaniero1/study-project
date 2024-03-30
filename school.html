@@ -5,172 +5,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <svg></svg>
-            Пространство танца
+        <div class="header-logo">
+            <img src="src/logo.png" alt="Логотип школы">
         </div>
-        <nav class="nav">
-            <a href="/about">О нас</a>
-            <a href="/new">Новости</a>
-            <a href="/raiting">Рейтинг</a>
-            <a href="/calendar">Календарь</a>
-            <a href="/contacts">Контакты</a>
+        <nav class="header-nav">
+            <a class="header-nav__link" href="/about">О нас</a>
+            <a class="header-nav__link" href="/new">Новости</a>
+            <a class="header-nav__link" href="/raiting">Рейтинг</a>
+            <a class="header-nav__link" href="/calendar">Календарь</a>
+            <a class="header-nav__link" href="/contacts">Контакты</a>
         </nav>
-        <div class="socilas">
-            <a href="/calendar">
-                <svg></svg>
+        <div class="header-socials">
+            <a class="header-socials__link" href="/insta" id="insta">
+                <img src="src/inst.png" alt="Логотип инстаграмма">
             </a>
-            <a href="/contacts">
-                <svg></svg>
+            <a class="header-socials__link" href="/vk" id="vk">
+                <img src="src/vk.png" alt="Логотип вк">
             </a>
         </div>
     </header>
-    <main>
-        <div class="schools">
-            <div class="button-panel">
-                <button class="divisions-button">Дивизионы</button>
-                <button class="schools-button">Школы</button>
-                <button class="members-button">Участники</button>
-            </div>
-            <div class="raitings-schools">
-                <h2>Рейтинг Школ:</h2>
-                <button class="carusel-prev">
-                    <svg></svg>
-                </button>
-                <ul class="carusel-diagram">
-                    <li>
-                        310
-                        <button class="button-diagram-progress"></button>
-                        ТимПарк
-                    </li>
-                    <li>
-                        380
-                        <button class="button-diagram-progress"></button>
-                        Хогвартс
-                    </li>
-                    <li>
-                        350
-                        <button class="button-diagram-progress"></button>
-                        МСДонатело
-                    </li>
-                    <li>
-                        330
-                        <button class="button-diagram-progress"></button>
-                        Дабугикрю
-                    </li>
-                    <li>
-                        350
-                        <button class="button-diagram-progress"></button>
-                        Kakoi to perez
-                    </li>
-                </ul>
-                <button class="carusel-next">
-                    <svg></svg>
-                </button>
-            </div>
-        </div>
-        <div class="division-schools">
-            <h2> Участники школы "ТимПарк"</h2>
-            <button class="carusel-prev">
-                <svg></svg>
-            </button>
-            <ul class="carusel">
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="ТимПарк">
-                        ТимПарк
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
+    <main class="school">
+        <div class="school-block">
+            <ul class="school-panel">
+                <li>
+                    <button class="school-panel__category">
+                        <p>Дивизионы</p>
+                    </button>
                 </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Дабугикрю">
-                        Дабугикрю
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
+                <li>
+                    <button class="school-panel__category" style="background-color: rgba(0, 0, 0, 0.5)">
+                        <p>Школы</p>
+                    </button>
                 </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Катя Федорова">
-                        Катя Федорова
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Jane Valdez">
-                        Jane Valdez
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Mario Ballard">
-                        Mario Ballard
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <svg></svg>
-                    <div class="card-main">
-                        <img src="" alt="Kakoi to perez">
-                        Kakoi to perez
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Escho odin">
-                        Escho odin
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
+                <li>
+                    <button class="school-panel__category" style="background-color: rgba(11, 219, 30, 0.5)">
+                        <p>Участники</p>
+                    </button>
                 </li>
             </ul>
-            <button class="carusel-next">
-                <svg></svg>
-            </button>
+            <div class="school-diagram">
+                <h2>Рейтинг Школ:</h2>
+                <div class="school-diagram-block">
+                    <button class="school-raitings-diagram__prev">
+                        <svg viewBox="0 0 9 14">
+                            <path
+                                d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+                        </svg>
+                    </button>
+                    <ul class="school-diagram-carusel">
+                        <li class="school-diagram__card">
+                            <h2>300</h2>
+                            <button class="school-diagram-progress"
+                                style="height: 500px; background-color: rgba(255, 39, 0)"></button>
+                            <h4>ТимПарк</h4>
+                        </li>
+                        <li class="school-diagram__card">
+                            <h2>380</h2>
+                            <button class="school-diagram-progress"
+                                style="height: 400px; background-color: rgba(11, 219, 30)"></button>
+                            <h4>Хогвартс</h4>
+                        </li>
+                        <li class="school-diagram__card">
+                            <h2>350</h2>
+                            <button class="school-diagram-progress"
+                                style="height: 300px; background-color: rgba(0, 104, 234)"></button>
+                            <h4>МСДонатело</h4>
+                        </li>
+                        <li class="school-diagram__card">
+                            <h2>330</h2>
+                            <button class="school-diagram-progress"
+                                style="height: 200px; background-color: rgba(255, 39, 0)"></button>
+                            <h4>Дабугикрю</h4>
+                        </li>
+                        <li class="school-diagram__card">
+                            <h2>350</h2>
+                            <button class="school-diagram-progress"
+                                style="height: 500px; background-color: rgba(11, 219, 30)"></button>
+                            <h4>Kakoi to perez</h4>
+                        </li>
+                    </ul>
+                    <button class="school-raitings-diagram__next">
+                        <svg viewBox="0 0 9 14">
+                            <path
+                                d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="card-school">
-            <div class="socilas">
+        <div class="school-raiting">
+            <h2>Участники Школы «ТимПарк»</h2>
+            <div class="school-raiting-carusel">
+                <button class="school-raiting-carusel__prev">
+                    <svg viewBox="0 0 9 14">
+                        <path
+                            d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+                    </svg>
+                </button>
+                <ul class="school-raiting-carusel__content">
+                    <li class="school-raiting-carusel__card">
+                        <div class="school-raiting-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="school-raiting-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="school-raiting-carusel__card">
+                        <div class="school-raiting-carusel_name">
+                            <img src="src/girl.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="school-raiting-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="school-raiting-carusel__card">
+                        <div class="school-raiting-carusel_name">
+                            <img src="src/girl.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="school-raiting-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="school-raiting-carusel__card">
+                        <div class="school-raiting-carusel_name">
+                            <img src="src/girl.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="school-raiting-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="school-raiting-carusel__card">
+                        <div class="school-raiting-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="school-raiting-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="school-raiting-carusel__card">
+                        <div class="school-raiting-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="school-raiting-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="school-raiting-carusel__card">
+                        <div class="school-raiting-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="school-raiting-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                </ul>
+                <button class="school-raiting-carusel__next">
+                    <svg viewBox="0 0 9 14">
+                        <path
+                            d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="school-card-info">
+            <div class="school-card-socilas">
                 <a href="/instagramm">
-                    <svg></svg>
+                    <img src="src/school-inst.svg" alt="">
                 </a>
                 <a href="/vk">
-                    <svg></svg>
+                    <img src="src/school-vk.svg" alt="">
                 </a>
                 <a href="/web">
-                    <svg></svg>
+                    <img src="src/school-web.svg" alt="">
                 </a>
             </div>
-            <div class="card-info">
-                <div class="card-title">                                  
-                    <h3>Школа танцев Олега Артеменкова</h3>
-                    <svg></svg>
+            <div class="school-card-info__block">
+                <div class="school-card-info__title">
+                    <h1>Школа танцев Олега Артеменкова</h1>
+                    <img src="src/school-logo.svg" alt="">
                 </div>
                 <p>«TeamPark» - это школа танца и команда, включающая в себя талантливых танцоров различных стилей
                     современной танцевальной культуры, а также опытных преподавателей.
@@ -182,21 +214,21 @@
                     Преподаватели нашей студии танцев постоянно посещают мастер-классы звёзд мирового streetdance,также
                     повышают свой уровень развития поездками на крупные чемпионаты в Европу. Мы ежегодно устраиваем
                     Международный фестиваль по современным стилям танцевальной культуры “Teamka” (Москва) и фестиваль
-                    "Реакция"(Горки-10) .
+                    "Реакция"(Горки-10).
                     Приглашаем сюда всех друзей, танцоров, всех, кто хочет учиться у нас танцевать, а также тех, кто
                     хочет нас поддержать!!!</p>
             </div>
         </div>
     </main>
     <footer class="footer">
-        <p>Все права зашишены (с)</p>
-        Мы в соце сетях
-        <div class="socilas">
-            <a href="/instagramm">
-                <svg></svg>
+        <p>Все права защищены <br>(с)</p>
+        Мы в социальных сетях
+        <div class="footer-socilas">
+            <a href="/inst">
+                <img src="src/inst.png" alt="">
             </a>
-            <a href="/vk">
-                <svg></svg>
+            <a href="/vk.com">
+                <img src="src/vk.png" alt="">
             </a>
         </div>
     </footer>
