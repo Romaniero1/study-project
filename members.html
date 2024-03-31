@@ -5,216 +5,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <svg></svg>
-            Пространство танца
+        <div class="header-logo">
+            <img src="src/logo.png" alt="Логотип школы">
         </div>
-        <nav class="nav">
-            <a href="/about">О нас</a>
-            <a href="/new">Новости</a>
-            <a href="/raiting">Рейтинг</a>
-            <a href="/calendar">Календарь</a>
-            <a href="/contacts">Контакты</a>
+        <nav class="header-nav">
+            <a class="header-nav__link" href="/about">О нас</a>
+            <a class="header-nav__link" href="/new">Новости</a>
+            <a class="header-nav__link" href="/raiting">Рейтинг</a>
+            <a class="header-nav__link" href="/calendar">Календарь</a>
+            <a class="header-nav__link" href="/contacts">Контакты</a>
         </nav>
-        <div class="socilas">
-            <a href="/calendar">
-                <svg></svg>
+        <div class="header-socials">
+            <a class="header-socials__link" href="/insta" id="insta">
+                <img src="src/inst.png" alt="Логотип инстаграмма">
             </a>
-            <a href="/contacts">
-                <svg></svg>
+            <a class="header-socials__link" href="/vk" id="vk">
+                <img src="src/vk.png" alt="Логотип вк">
             </a>
         </div>
     </header>
-    <main>
-        <div class="members">
-            <div class="button-panel">
-                <button class="divisions-button">Дивизионы</button>
-                <button class="schools-button">Школы</button>
-                <button class="members-button">Участники</button>
-            </div>
-            <div class="card-members">
+    <main class="members">
+        <div class="member-block">
+            <ul class="member-panel">
+                <li>
+                    <button class="member-panel__category">
+                        <p>Дивизионы</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="member-panel__category" style="background-color: rgba(0, 0, 0, 0.5)">
+                        <p>Школы</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="member-panel__category" style="background-color: rgba(11, 219, 30, 0.5)">
+                        <p>Участники</p>
+                    </button>
+                </li>
+            </ul>
+            <div class="member-card">
                 <h1>Кэт Федор</h1>
-                <p>Летай как бабочка, жаль как пчела</p>
-                <ul class="detail-info">
-                    <li>
-                        <img src="" alt="Кэт Федор">
-                        <h3>Дата рождения</h3>
-                        <p>19.02.1999</p>
-                    </li>
-                    <li>
+                <div class="member-card__cover">
+                    <img src="src/members-card-cover.png" alt="Кэт Федор">
+                    <p>Летай как бабочка, жаль как пчела</p>
+                </div>
+                <h3>Дата рождения</h3>
+                <p>19.02.1999</p>
+                <div class="member-card-background"></div>
+                <ul class="member-card-info">
+                    <li class="member-card-info__detail">
                         <h3>Школа</h3>
                         <p>ТимПарк</p>
                     </li>
-                    <li>
-                        <h3>Руководитель школы</h3>
-                        <p>Уважаемый человек</p>
-                    </li>
-                    <li>
-                        <h3>Район</h3>
+                    <li class="member-card-info__detail">
+                        <h3>Дивизион</h3>
                         <p>Западный</p>
                     </li>
-                    <li>
-                        <h3>Соц. сети</h3>
-                        <a href="/instagramm">
-                            <svg></svg>
-                        </a>
-                        <a href="/vk">
-                            <svg></svg>
-                        </a>
+                    <li class="member-card-info__detail">
+                        <h3>Соц.сети</h3>
+                        <div class="member-card-info__detail_socials">
+                            <a href="/inst">
+                                <img src="src/inst.png" alt="">
+                            </a>
+                            <a href="/vk.com">
+                                <img src="src/vk.png" alt="">
+                            </a>
+                        </div>
                     </li>
-                    <li>
+                    <li class="member-card-info__detail">
                         <h3>Рейтинг</h3>
                         <p>3</p>
                     </li>
                 </ul>
-                <div class="search">
-                    <button class="button-search">
-                        <svg></svg>
+                <div class="member-search">
+                    <button class="member-search__button">
+                        <img src="src/members-search.svg" alt="">
                     </button>
                     <input type="text" placeholder="Введите имя">
-                    <ul class="results-search">
-                        <li class="member">
-                            Алексей Федоров
-                        </li>
-                        <li class="member">
-                            Александр Чибис
-                        </li>
-                        <li class="member">
-                            Алена Селедкина
-                        </li>
-                    </ul>
                 </div>
 
             </div>
         </div>
-        <div class="division-schools">
-            <h2> Все участники</h2>
-            <button class="carusel-prev">
-                <svg></svg>
-            </button>
-            <ul class="carusel">                                                                            // можно оставить carusel или написать что то про контент?
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="ТимПарк">
-                        ТимПарк
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Дабугикрю">
-                        Дабугикрю
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Катя Федорова">
-                        Катя Федорова
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Jane Valdez">
-                        Jane Valdez
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Mario Ballard">
-                        Mario Ballard
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <svg></svg>
-                    <div class="card-main">
-                        <img src="" alt="Kakoi to perez">
-                        Kakoi to perez
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-                <li class="carusel-card">
-                    <div class="card-main">
-                        <img src="" alt="Escho odin">
-                        Escho odin
-                    </div>
-                    <div class="card-addionatl-info">
-                        - Западный район
-                        - Школа жизнки
-                    </div>
-                </li>
-            </ul>
-            <button class="carusel-next">
-                <svg></svg>
-            </button>
-        </div>
-        <div class="card-school">
-            <div class="socilas">
-                <a href="/instagramm">
-                    <svg></svg>
-                </a>
-                <a href="/vk">
-                    <svg></svg>
-                </a>
-                <a href="/web">
-                    <svg></svg>
-                </a>
-            </div>
-            <div class="card-info">
-                <div class="card-title">
-                    <h3>Школа танцев Олега Артеменкова</h3>
-                    <svg></svg>
-                </div>
-                <p>«TeamPark» - это школа танца и команда, включающая в себя талантливых танцоров различных стилей
-                    современной танцевальной культуры, а также опытных преподавателей.
-                    Команда «TeamPark» родилась 23 декабря 2004 года под руководством Олега Артеменкова. Это было
-                    выступление в ДК нашего университета РГАУ-МСХА им.К.А.Тимирязева. После этого развитие и рост пошли
-                    в гору: баттлы, чемпионаты, фестивали. С того времени участвовали и занимали призовые места на
-                    различных студенческих фестивалях Москвы и России (на Всероссийском студенческом фестивале в МГУ
-                    им.Ломоносова, Фестосе и других), а также на различных баттлах в Москве, России, СНГ и за рубежом.
-                    Преподаватели нашей студии танцев постоянно посещают мастер-классы звёзд мирового streetdance,также
-                    повышают свой уровень развития поездками на крупные чемпионаты в Европу. Мы ежегодно устраиваем
-                    Международный фестиваль по современным стилям танцевальной культуры “Teamka” (Москва) и фестиваль
-                    "Реакция"(Горки-10) .
-                    Приглашаем сюда всех друзей, танцоров, всех, кто хочет учиться у нас танцевать, а также тех, кто
-                    хочет нас поддержать!!!</p>
+        <div class="members-raiting">
+            <h2>Все участники</h2>
+            <div class="members-carusel">
+                <button class="members-carusel__prev">
+                    <svg viewBox="0 0 9 14">
+                        <path
+                            d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+                    </svg>
+                </button>
+                <ul class="members-carusel__content">
+                    <li class="members-carusel__card">
+                        <div class="members-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="members-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="members-carusel__card">
+                        <div class="members-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="members-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="members-carusel__card">
+                        <div class="members-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="members-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="members-carusel__card">
+                        <div class="members-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="members-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="members-carusel__card">
+                        <div class="members-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="members-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="members-carusel__card">
+                        <div class="members-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="members-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                    <li class="members-carusel__card">
+                        <div class="members-carusel_name">
+                            <img src="src/boy.png" alt="Lester Figuero">
+                            Lester Figuero
+                        </div>
+                        <div class="members-carusel_info">
+                            - Западный район <br>
+                            - Школа №123
+                        </div>
+                    </li>
+                </ul>
+                <button class="members-carusel__next">
+                    <svg viewBox="0 0 9 14">
+                        <path
+                            d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+                    </svg>
+                </button>
             </div>
         </div>
     </main>
     <footer class="footer">
-        <p>Все права зашишены (с)</p>
-        Мы в соце сетях
-        <div class="socilas">
-            <a href="/instagramm">
-                <svg></svg>
+        <p>Все права защищены <br>(с)</p>
+        Мы в социальных сетях
+        <div class="footer-socilas">
+            <a href="/inst">
+                <img src="src/inst.png" alt="">
             </a>
-            <a href="/vk">
-                <svg></svg>
+            <a href="/vk.com">
+                <img src="src/vk.png" alt="">
             </a>
         </div>
     </footer>
