@@ -33,10 +33,16 @@ a {
     background-color: #fff;
 }
 
+.header-color_night {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.header-color_day {
+    background-color: #fff;
+}
+
 .header-color_day .header-nav__link {
     color: black;
 }
-
 
 .header-logo {
     margin-right: auto;
@@ -70,16 +76,30 @@ a {
     margin-right: 0;
 }
 
+
 .main-intro {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: 518px;
-    padding-left: 70px;
-    padding-right: 70px;
     background: url(src/cover-main.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 .main-intro__title {
@@ -127,10 +147,13 @@ a {
 }
 
 .main-raitings {
-    margin: 0 70px;
+    box-sizing: border-box;
     padding-top: 27px;
+    width: 100%;
     display: flex;
     height: 380px;
+    margin: auto;
+    justify-content: center;
 }
 
 .main-carusel {
@@ -207,10 +230,12 @@ li {
     right: -8px;
 }
 
+.news-diagram,
 .main-diagram {
     padding-top: 29px;
 }
 
+.news-diagram__block,
 .main-diagram__block {
     padding-bottom: 20px;
     display: flex;
@@ -218,45 +243,54 @@ li {
     position: relative;
 }
 
+.news-diagram__block:last-child,
 .main-diagram__block:last-child {
     padding-bottom: 0;
 }
 
+.news-diagram__block h4,
 .main-diagram__block h4 {
     width: 102px;
 }
 
+.news-raitings-progress,
 .main-raitings-progress {
     width: 70px;
     height: 20px;
     border: 0;
 }
 
+.news-raitings-progress:focus,
 .main-raitings-progress:focus {
     border: solid 2px white;
 }
 
+.news-raitings-count,
 .main-raitings-count {
     position: absolute;
     left: 250px;
 }
 
+.news-members__button,
 .main-members__button {
     margin-top: 57px;
     margin-left: 121px;
 }
 
 .main-calendar {
-    display: flex;
+    box-sizing: border-box;
     position: relative;
+    display: flex;
     flex-direction: column;
-    height: 727px;
-    padding-left: 70px;
-    padding-right: 70px;
+    height: 500px;
     background: url(src/cover-calendar.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    margin: auto;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .main-calendar h2 {
@@ -307,13 +341,12 @@ li {
 }
 
 .main-news {
-    display: flex;
     position: relative;
+    display: flex;
     flex-direction: column;
     height: 736px;
-    padding-left: 70px;
-    padding-right: 70px;
     padding-top: 50px;
+    margin: auto;
 }
 
 .main-news__block {
@@ -357,21 +390,24 @@ li {
 
 .main-about {
     display: flex;
-    padding-left: 70px;
-    padding-right: 70px;
     padding-top: 74px;
     background-color: #02171E;
     height: 495px;
     color: #fff;
     justify-content: space-between;
+    margin: auto;
+    width: 1440px;
+}
+
+.main-about__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .main-about__block {
     width: 454px;
-}
-
-.main-about__block:last-child {
-    padding-left: 100px;
 }
 
 .main-about__block h3 {
@@ -399,6 +435,8 @@ li {
     top: 0;
     height: 55px;
     z-index: 10000;
+    width: 1300px;
+    margin: auto;
 }
 
 .footer p {
@@ -446,12 +484,13 @@ h1 .news-intro__news_title {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .news-bread__crumbs {
     color: white;
-    padding-left: 64px;
-    padding-right: 64px;
 }
 
 .contacts-bread__crumbs_color,
@@ -499,24 +538,7 @@ h1 .news-intro__news_title {
 
 .news-raitings__divisions {
     padding-left: 175px;
-}
-
-.news-diagram {
-    padding-top: 25px;
-}
-
-.news-diagram__area {
-    display: flex;
-    padding-bottom: 16px;
-}
-
-.news-diagram__area:last-child {
-    padding-bottom: 0px;
-}
-
-.news-members__button {
-    margin-top: 57px;
-    margin-left: 121px;
+    color: #fff;
 }
 
 .news-all {
@@ -712,6 +734,7 @@ input[type=range]::-webkit-slider-thumb {
     padding-top: 66px;
     padding-left: 70px;
     padding-right: 70px;
+    width: 1200px;
 }
 
 .news-detail-comments hr {
@@ -771,17 +794,18 @@ input[type=range]::-webkit-slider-thumb {
 
 .about-intro {
     display: flex;
+    flex-direction: column;
     margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 518px;
-    padding-left: 70px;
-    padding-right: 70px;
     background: url(src/about-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    width: 1440px;
 }
 
 .about-intro hr {
@@ -796,9 +820,10 @@ input[type=range]::-webkit-slider-thumb {
     display: flex;
     flex-direction: column;
     margin: auto;
-    justify-content: center;
     padding-left: 70px;
     padding-right: 70px;
+    width: 1200px;
+    position: relative;
 }
 
 .about-dance__block {
@@ -838,12 +863,13 @@ input[type=range]::-webkit-slider-thumb {
     height: 449px;
     width: 923px;
     margin-top: -100px;
-    margin-left: 450px;
+    margin-left: 300px;
     padding-top: 102px;
-    padding-left: 100px;
+    padding-left: 100px;    
+    background: url(src/about-support-cover.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background: url(src/about-support-cover.png);
+    z-index: 100px;
 }
 
 .about-support__title {
@@ -867,7 +893,8 @@ input[type=range]::-webkit-slider-thumb {
     height: 200px;
     width: 940px;
     margin-top: 50px;
-    margin-left: 121px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 55px;
     padding-left: 116px;
     background-repeat: no-repeat;
@@ -1073,8 +1100,6 @@ input[type=range]::-webkit-slider-thumb {
 .calendar-month {
     display: flex;
     padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
     justify-content: center;
     align-items: baseline;
 }
@@ -1093,8 +1118,6 @@ input[type=range]::-webkit-slider-thumb {
     grid-template-columns: 230px 230px 230px 230px;
     row-gap: 20px;
     column-gap: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
     justify-content: center;
 }
 
@@ -1220,12 +1243,11 @@ input[type=range]::-webkit-slider-thumb {
     justify-content: center;
     flex-direction: column;
     height: 518px;
-    padding-left: 70px;
-    padding-right: 70px;
     background: url(src/contacts-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    padding-left: 140px;
 }
 
 .contacts-card {
@@ -1397,6 +1419,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .division {
+    box-sizing: border-box;
     background-color: black;
     color: #F9F9F9;
     display: flex;
@@ -1407,6 +1430,7 @@ input[type=range]::-webkit-slider-thumb {
     padding-bottom: 200px;
     margin: auto;
     padding-top: 245px;
+    width: 100%;
 }
 
 .divisions-block {
@@ -1444,7 +1468,7 @@ input[type=range]::-webkit-slider-thumb {
 
 .divisions-raitings-diagram {
     margin-top: 55px;
-    width: 1242px;
+    width: 1200px;
 }
 
 .divisions-raitings-diagram__block {
