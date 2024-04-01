@@ -36,6 +36,7 @@ a {
 .header-color_night {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 .header-color_day {
     background-color: #fff;
 }
@@ -865,7 +866,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: -100px;
     margin-left: 300px;
     padding-top: 102px;
-    padding-left: 100px;    
+    padding-left: 100px;
     background: url(src/about-support-cover.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -1148,11 +1149,13 @@ input[type=range]::-webkit-slider-thumb {
     color: #F9F9F9;
 }
 
+.event-modal__date_block,
 .calendar-event__date_block {
     display: flex;
     align-items: center;
 }
 
+.event-modal__date_months,
 .calendar-event__date_months {
     padding-left: 4px;
 }
@@ -1366,6 +1369,7 @@ input[type=range]::-webkit-slider-thumb {
     border: 0;
 }
 
+.event-modal-close,
 .request-modal-close svg {
     width: 21px;
     height: 21px;
@@ -1879,4 +1883,38 @@ input[type=range]::-webkit-slider-thumb {
     width: 1000px;
     border: 0;
     padding-left: 10px;
+}
+
+.event-modal {
+    position: relative;
+    width: 959px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    background-color: #979797;
+}
+
+.event-modal-close {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    top: 12px;
+    right: 22px;
+}
+
+.event-modal__date_block {
+    position: absolute;
+    left: 77px;
+    top: 57px;
+}
+
+.event-modal__cover {
+    padding-top: 30px;
+}
+
+.event-modal__text {
+    padding-top: 15px;
+    padding-bottom: 45px;
+    text-align: center;
 }
